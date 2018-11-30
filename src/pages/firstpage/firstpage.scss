@@ -1,0 +1,41 @@
+page-firstpage {
+    .margin{
+        margin-top: 40%;
+    }
+    h1{
+        margin-left: 30px;
+        margin-top: 100px;
+        color: #10df6d;
+        font-size: 7vh!important;
+        //font-weight: lighter!important;
+        font-family: cursive;
+        
+
+    }
+    
+    h3{
+        margin-left: 40px;
+        color: rgb(247, 215, 36)
+        //margin-top: 20%;
+
+     }
+
+    .bg-image{
+        background-image:url('../assets/imgs/1.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        height: 165%;
+        //width: 100%;
+    
+   
+       
+        
+    }
+    ion-toolbar{
+        background: transparent!important;
+        background-color:(#10df6d);
+    }
+
+}
+

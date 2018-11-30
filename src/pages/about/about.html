@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title style="text-align: center">
+      ข้อมูลส่วนตัว
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <img src="assets/imgs/profile.png" class = "circle"/>
+ 
+ <h2>ข้อมูลส่วนตัว</h2>
+   
+      <ion-item no-lines >
+        <ion-label fixed >ชื่อ :  </ion-label>
+        <ion-input type="text" value="{{userdata.mem_name}}" [(ngModel)]="name"></ion-input>
+      </ion-item>
+
+      <ion-item no-lines>
+          <ion-label fixed>นามสกุล : </ion-label>
+          <ion-input type="text" value="{{userdata.mem_lastname}}" [(ngModel)]="lastname"></ion-input>
+      </ion-item>
+
+        <ion-item no-lines>
+          <ion-label fixed>ที่อยู่ :</ion-label>
+          <ion-input type="text" value="{{userdata.mem_address}}" [(ngModel)]="address"></ion-input>
+        </ion-item>
+
+        <ion-item no-lines>
+          <ion-label fixed>เบอร์โทรศัพท์ :</ion-label>
+          <ion-input type="text" value="{{userdata.mem_tel}}" [(ngModel)]="telephone"></ion-input>
+        </ion-item>
+      
+        <ion-item no-lines>
+          <ion-label fixed >อีเมล์ :</ion-label>
+          <ion-input type="text" value="{{userdata.mem_email}}" [(ngModel)]="email"></ion-input>
+        </ion-item >
+     
+    <button ion-button round  block (click) ="memeberUpdate(name,lastname,address,telephone,email)">Update</button>
+    <button ion-button round color="dark" block (click) ="logout()">ออกจากระบบ</button>
+      
+      
+      
+  
+
+</ion-content>

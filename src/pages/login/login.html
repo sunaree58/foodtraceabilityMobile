@@ -1,0 +1,39 @@
+<ion-header >
+
+  <ion-navbar color="secondary">
+    <ion-title style="text-align:center">เข้าสู่ระบบ</ion-title>
+  </ion-navbar >
+
+</ion-header>
+<ion-content padding>
+    <ion-list no-lines >
+        
+      <button ion-button icon-start clear small  (click) ="adminLogin()" >
+            <ion-icon right  name="person"></ion-icon>
+            <div >AdminLogin</div>
+      </button>
+
+        <ion-item style="text-align: center">
+            <img  height="200px" width="150px" src="assets/imgs/log.jpg">
+        </ion-item>
+          
+        
+                        <ion-item>
+                          <ion-label fixed>ชื่อผู้ใช้ :</ion-label>
+                          <ion-input type="text" value="as" [(ngModel)]="userlogin.username" ></ion-input>
+                        </ion-item>
+                      
+                        <ion-item>
+                          <ion-label fixed>รหัสผ่าน :</ion-label>
+                          <ion-input type="password" value="123" [(ngModel)]="userlogin.password"></ion-input>
+                        </ion-item>
+                      
+                      
+            
+        <button padding ion-button round block (click) ="login()">เข้าสู่ระบบ</button>
+        
+        
+      
+    </ion-list>
+
+</ion-content>

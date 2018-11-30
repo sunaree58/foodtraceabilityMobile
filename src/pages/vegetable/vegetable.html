@@ -1,0 +1,152 @@
+<!--
+  Generated template for the VegetablePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title style="text-align:center">เกร็ดความรู้</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+    <ion-list>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img height="130px" width="150px"  src="assets/imgs/แตงกวา.jpg">
+          </ion-thumbnail>
+          <h2>แตงกวา</h2>
+          <p>เกร็ดความรู้ทั่วไป</p>
+          <button ion-button clear item-end (click) ="vegetabel1()">อ่าน</button>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+              <img height="130px" width="180px"  src="assets/imgs/มะเขือเทศ.jpg">
+            </ion-thumbnail>
+            <h2>มะเขือเทศ</h2>
+            <p>เกร็ดความรู้ทั่วไป</p>
+            <button ion-button clear item-end (click) ="vegetabel2()">อ่าน</button>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+              <img height="130px" width="180px"  src="assets/imgs/พริกขี้หนู.jpg">
+            </ion-thumbnail>
+            <h2>พริกขี้หนู</h2>
+            <p>เกร็ดความรู้ทั่วไป</p>
+            <button ion-button clear item-end (click) ="vegetabel3()">อ่าน</button>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+              <img height="130px" width="180px"  src="assets/imgs/พริกชี้ฟ้า.jpg">
+            </ion-thumbnail>
+            <h2>พริกชี้ฟ้า</h2>
+            <p>เกร็ดความรู้ทั่วไป</p>
+            <button ion-button clear item-end (click) ="vegetabel4()">อ่าน</button>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+              <img height="130px" width="180px"  src="assets/imgs/ผักกาดขาว.jpg">
+            </ion-thumbnail>
+            <h2>ผัดกาดขาว</h2>
+            <p>เกร็ดความรู้ทั่วไป</p>
+            <button ion-button clear item-end (click) ="vegetabel5()">อ่าน</button>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+              <img height="130px" width="180px"  src="assets/imgs/กะหล่ำ.jpg">
+            </ion-thumbnail>
+            <h2>กะหล่ำปลี</h2>
+            <p>เกร็ดความรู้ทั่วไป</p>
+            <button ion-button clear item-end (click) ="vegetabel6()">อ่าน</button>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+              <img height="130px" width="180px"  src="assets/imgs/ผักชีไทย.jpg">
+            </ion-thumbnail>
+            <h2>ผักชีไทย</h2>
+            <p>เกร็ดความรู้ทั่วไป</p>
+            <button ion-button clear item-end (click) ="vegetabel7()">อ่าน</button>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+              <img height="130px" width="180px"  src="assets/imgs/ผักชีฝรั่ง.jpg">
+            </ion-thumbnail>
+            <h2>ผักชีฝรั่ง</h2>
+            <p>เกร็ดความรู้ทั่วไป</p>
+            <button ion-button clear item-end (click) ="vegetabel8()">อ่าน</button>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+              <img height="130px" width="180px"  src="assets/imgs/มันฝรั่ง.jpg">
+            </ion-thumbnail>
+            <h2>มันฝรั่ง</h2>
+            <p>เกร็ดความรู้ทั่วไป</p>
+            <button ion-button clear item-end (click) ="vegetabel9()">อ่าน</button>
+        </ion-item>
+      </ion-list>
+
+
+    <!-- <ion-row>
+    
+        <button ion-button icon-start clear small (click) ="vegetabel1()">
+          <ion-icon name="eye"></ion-icon>
+          <div>แตงกวา</div>
+        </button>
+        <button ion-button icon-start clear small (click) ="vegetabel2()">
+          <ion-icon name="eye"></ion-icon>
+          <div>กะหล่ำปลี</div>
+        </button>
+        <button ion-button icon-start clear small (click) ="vegetabel3()">
+          <ion-icon name="eye"></ion-icon>
+          <div>ผัดกาดขาด</div>
+        </button>
+        <button ion-button icon-start clear small (click) ="vegetabel4()">
+          <ion-icon name="eye"></ion-icon>
+          <div>พริกขี้หนู</div>
+        </button>
+        <button ion-button icon-start clear small (click) ="vegetabel5()">
+          <ion-icon name="eye"></ion-icon>
+          <div>พริกชี้ฟ้า</div>
+        </button>
+        <button ion-button icon-start clear small (click) ="vegetabel6()">
+            <ion-icon name="eye"></ion-icon>
+            <div>มันฝรั่ง</div>
+          </button>
+          <button ion-button icon-start clear small (click) ="vegetabel7()">
+            <ion-icon name="eye"></ion-icon>
+            <div>ผักชีไทย</div>
+          </button>
+          <button ion-button icon-start clear small (click) ="vegetabel8()">
+            <ion-icon name="eye"></ion-icon>
+            <div>ผักชีฝรั่ง</div> 
+          </button>  
+          <button ion-button icon-start clear small (click) ="vegetabel9()">
+            <ion-icon name="eye"></ion-icon>
+            <div>มะเขือเทศ</div>
+          </button>
+    </ion-row> -->
+
+    <!-- <button ion-button color="secondary" outline (click)="cucumber()">แตงกวา</button>
+    <button ion-button color="secondary" outline>ผัดกาดขาด(ลุ้ย)</button>
+    <button ion-button color="secondary" outline>กะหล่ำปลี</button>
+    <button ion-button color="secondary" outline>มะเขือเทศ</button>
+    <button ion-button color="secondary" outline>พริกขี้หนู</button>
+    <button ion-button color="secondary" outline>พริกชี้ฟ้า</button>
+    <button ion-button color="secondary" outline>มันฝรั่ง</button>
+    <button ion-button color="secondary" outline>ผักชีไทย</button>
+    <button ion-button color="secondary" outline>ผักชีฝรั่ง</button> -->
+    
+</ion-content>

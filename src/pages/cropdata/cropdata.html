@@ -1,0 +1,89 @@
+<!--
+  Generated template for the CropdataPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title style="text-align:center">บันทึกกิจกรมการเพาะปลูก</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+    <button ion-button icon-start clear small  (click) ="addcrop2()">
+        <ion-icon  name="add-circle"></ion-icon>
+        <div>เพิ่มกิจกรรมเพาะปลูก</div>
+    </button>
+    <!-- <button ion-button icon-start clear small (click) ="expenses()">
+        <ion-icon  name="calculator" ></ion-icon>
+        <div>คำนวนต้นทุน </div>
+    </button> -->
+    
+
+  <button ion-button icon-start clear small color="do">
+      <ion-icon  name="calculator"></ion-icon>
+      <div>ต้นทุนทั้งหมด : {{sum}} บาท </div>
+  </button>
+
+  <button ion-button icon-start clear small color="do">
+    <ion-icon  name="cart"></ion-icon>
+    <div>รายได้จากการขายผลผลิต : {{sum_revenue}} บาท </div>
+</button>
+
+<button ion-button icon-start clear small color="do">
+  <ion-icon  name="logo-usd"></ion-icon>
+  <div>กำไรขาดทุน : {{sum_revenue - sum}} บาท </div>
+</button>
+  
+         <!-- <p>ต้นทุนทั้งหมด : {{sum}} บาท 
+       <br> รายได้จากการขายผลผลิต : {{sum_revenue}} บาท
+       <br> กำไรขาดทุน : {{sum_revenue - sum}} บาท
+        </p>  -->
+        
+        
+        <!-- <div *ngFor="let item of cropdetailData">ต้นทุนทั้งหมด : {{item.expenses}}</div> -->
+    <!-- <ion-label fixed ></ion-label> -->
+    <!-- <ion-label fixed >กำไรขาดทุน :</ion-label> -->
+    
+      <!-- <ion-item no-lines>
+        <button
+           class="add"
+           ion-button
+           item-right
+           icon-right
+           margin-bottom
+           color="primary"
+           (click)="adddatail()">
+              เพิ่มกิจกรรมการเพาะปลูก
+          <ion-icon name="add-circle"></ion-icon>  
+        </button>
+    </ion-item> -->
+
+    <ion-card color="danger" ion-item *ngFor="let item of cropdetailData">
+      <ion-card-content >  
+        <p>วันที่ทำกิจกรรม : {{item.date}}  <br> กิจกรรม : {{item.plantingactivity}} <br> ค่าใช้จ่าย : {{item.expenses}} บาท<br> รายได้ : {{item.revenue}} บาท</p>
+      </ion-card-content>
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-start clear small (click) ="editcrop(item)">
+            <ion-icon  name="create"></ion-icon>
+            <div>แก้ไข</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-start clear small (click) ="decrop(item.crop_id)" color="dark">
+            <ion-icon name="trash"></ion-icon>
+            <div>ลบ</div>
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-card>
+    
+    
+    
+</ion-content>
+
+<!-- <ion-item *ngFor="let item of CropdataPage">
+      <p>Value: lortkfsgd;d;gkfjgiertuijsfkdhuahuseyrwrufashdgfuyierafuoiugfdkjgtrrr5yuwhreusldffjdhgwirgrjfgirtwslerkjti</p>
+        </ion-item> -->

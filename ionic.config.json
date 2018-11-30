@@ -1,0 +1,7 @@
+{
+  "name": "FoodTraceability",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

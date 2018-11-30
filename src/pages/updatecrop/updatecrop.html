@@ -1,0 +1,108 @@
+<!--
+  Generated template for the UpdatecropPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+  <ion-header>
+    <ion-navbar color="secondary">
+      <ion-title  style="text-align:center">แก้ไขแปลงเพาะปลูก </ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding  no-lines>
+
+      <ion-list >
+
+          <ion-item>
+              <ion-label>ชื่อผัก :</ion-label>
+              <ion-select [(ngModel)]="vegetable" interface="action-sheet">
+                  <ion-option value="ผักกาดขาว">ผักกาดขาว(ลุ้ย)</ion-option>
+                  <ion-option value="แตงกวา">แตงกวา</ion-option>
+                  <ion-option value="มะเขือเทศ">มะเขือเทศ</ion-option>
+                  <ion-option value="ผักชีไทย">ผักชีไทย</ion-option>
+                  <ion-option value="พริกขี้หนู">พริกขี้หนู</ion-option>
+                  <ion-option value="พริกชี้ฟ้า">พริกชี้ฟ้า</ion-option>
+                  <ion-option value="กระหล่ำปลี">กระหล่ำปลี</ion-option>
+                  <ion-option value="มันฝรั่ง">มันฝรั่ง</ion-option>
+                  <ion-option value="ผักชีฝรั่ง">ผักชีฝรั่ง</ion-option>
+              </ion-select>
+            </ion-item>
+
+        <!-- <ion-item >
+          <ion-label  no-lines>ชื่อผัก : </ion-label>
+          <ion-select  [(ngModel)]="vegetable">
+            <ion-option value="ผักกาดขาว">ผักกาดขาว(ลุ้ย)</ion-option>
+            <ion-option value="แตงกวา">แตงกวา</ion-option>
+            <ion-option value="มะเขือเทศ">มะเขือเทศ</ion-option>
+            <ion-option value="ผักชีไทย">ผักชีไทย</ion-option>
+            <ion-option value="พริกขี้หนู">พริกขี้หนู</ion-option>
+            <ion-option value="พริกชี้ฟ้า">พริกชี้ฟ้า</ion-option>
+            <ion-option value="กระหล่ำปลี">กระหล่ำปลี</ion-option>
+            <ion-option value="มันฝรั่ง">มันฝรั่ง</ion-option>
+            <ion-option value="ผักชีฝรั่ง">ผักชีฝรั่ง</ion-option>
+          </ion-select>
+        </ion-item> -->
+      
+      
+        <!-- <ion-item>
+          <ion-label  no-lines>ชื่อพันธุ์ : </ion-label>
+          <ion-select [(ngModel)]="breed">
+            <ion-option value="ซูโม้">ซูโม้</ion-option>
+            <ion-option value="ศรแดง">ศรแดง</ion-option>
+            <ion-option value="ท้อผลใหญ่">ท้อผลใหญ่</ion-option>
+            <ion-option value="พริกขี้หนูสวน 10-1-1-3-6">พริกขี้หนูสวน 10-1-1-3-6 </ion-option>
+            <ion-option value="โกลเด้นท์ เอเคอร์">โกลเด้นท์ เอเคอร์</ion-option>
+            <ion-option value="G0">G0</ion-option>
+            <ion-option value="ภูเขาทอง">ภูเขาทอง</ion-option>
+          </ion-select>
+        </ion-item> -->
+
+        <ion-item>
+            <ion-label>ชื่อพันธุ์ :</ion-label>
+            <ion-select [(ngModel)]="breed" interface="action-sheet">
+                <ion-option value="ซูโม้">ซูโม้</ion-option>
+                <ion-option value="ศรแดง">ศรแดง</ion-option>
+                <ion-option value="ท้อผลใหญ่">ท้อผลใหญ่</ion-option>
+                <ion-option value="พริกขี้หนูสวน 10-1-1-3-6">พริกขี้หนูสวน 10-1-1-3-6 </ion-option>
+                <ion-option value="โกลเด้นท์ เอเคอร์">โกลเด้นท์ เอเคอร์</ion-option>
+                <ion-option value="G0">G0</ion-option>
+                <ion-option value="ภูเขาทอง">ภูเขาทอง</ion-option>
+                <ion-option value="-" >-</ion-option>
+              </ion-select>
+          </ion-item>
+  
+        <!-- <ion-item>
+            <ion-label  no-lines>มาตรฐานที่ได้รับ : </ion-label>
+            <ion-select [(ngModel)]="standard">
+              <ion-option value="เกษตรอินทรีย์ ">เกษตรอินทรีย์</ion-option>
+              <ion-option value="GAP">GAP</ion-option>
+              <ion-option value="ไม่มี">ไม่มี</ion-option>
+            </ion-select>
+          </ion-item>
+        </ion-list>  -->
+
+        <ion-item>
+            <ion-label  no-lines>มาตรฐานที่ได้รับ :</ion-label>
+            <ion-select [(ngModel)]="standard" interface="action-sheet">
+              <ion-option value="เกษตรอินทรีย์ ">เกษตรอินทรีย์</ion-option>
+              <ion-option value="GAP">GAP</ion-option>
+              <ion-option value="-" >-</ion-option>
+            </ion-select>
+          </ion-item>
+        
+        <ion-label fixed  >จำนวนไร่ที่ปลูก : {{tran}}</ion-label>
+      <ion-item>
+         <ion-input type="text" [(ngModel)]="tran" value=""></ion-input>
+      </ion-item>
+    
+         <ion-label fixed >ตารางวา : </ion-label>
+      <ion-item >
+         <ion-input type="text" [(ngModel)]="tablewah" value="0"></ion-input>
+      </ion-item>
+    </ion-list>
+      <button ion-button round color="dark"  (click) ="updaterecord(vegetable,breed,standard,tran,tablewah)">แก้ไข</button>
+      <button ion-button round (click) ="undaterecord()">ยกเลิก</button>
+    </ion-content>
+  

@@ -1,0 +1,56 @@
+<!--
+  Generated template for the QrcodePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="secondary">
+      <ion-title>
+        สร้าง QR Code 
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+   
+  <ion-content padding>
+    <ion-item>
+      <ion-input type="text" placeholder="MY QR Code data" [(ngModel)]="qrData" value="">
+      </ion-input>
+    </ion-item>
+    <button ion-button full icon-left (click)="createCode()"><ion-icon name="barcode"></ion-icon>สร้าง QR Code</button>
+    <!-- <button ion-button full icon-left (click)="scanCode()"><ion-icon name="qr-scanner"></ion-icon>สแกน QR Code</button> -->
+   
+    <!-- <p>ส่งQR code ทางอีเมล์</p>
+    <ion-label fixed>ผู้ส่ง :</ion-label>
+      <ion-item>
+         <ion-input type="text" [(ngModel)]="subject" ></ion-input>
+      </ion-item>
+      <ion-label fixed>หัวข้อเรื่อง :</ion-label>
+      <ion-item>
+         <ion-input type="text" [(ngModel)]="body" ></ion-input>
+      </ion-item>
+      <ion-label fixed>ถึง :</ion-label>
+      <ion-item>
+         <ion-input type="text" [(ngModel)]="to" ></ion-input>
+      </ion-item>
+     -->
+    <!-- <button ion-button full icon-left ><ion-icon name="mail" (click)="sendemail1(createdCode)"></ion-icon>ส่ง QR Code ทาง Email </button> -->
+   
+    <ion-card *ngIf="createdCode">
+      <ngx-qrcode [qrc-value]="createdCode"></ngx-qrcode>
+      <ion-card-content>
+        <p>Value: {{ createdCode }}</p>
+        <button ion-button icon-start clear small (click)="sendemail(createdCode)">
+            <ion-icon  ios="ios-share" md="md-share"></ion-icon>
+            <div>แชร์ </div>
+        </button>
+      </ion-card-content>
+    </ion-card> 
+   
+    <!-- <ion-card *ngIf="scannedCode">
+      <ion-card-content>
+        Result from Scan: {{ scannedCode }}
+      </ion-card-content>
+    </ion-card> -->
+  </ion-content>
+

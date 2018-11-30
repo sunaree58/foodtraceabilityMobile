@@ -1,0 +1,166 @@
+<!--
+  Generated template for the CropdetailPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <ion-title style="text-align:center">กิจกรรมการเพาะปลูก</ion-title>
+  </ion-navbar>
+
+</ion-header>
+  
+  <ion-content class="outer-content">
+      <ion-item>
+          <ion-label>วันที่ทำกิจกรรม : </ion-label>
+          <ion-datetime displayFormat="MM/DD/YYYY" [(ngModel)]="myDate" value=""></ion-datetime>
+        </ion-item>
+
+    <!-- <div >
+      <h1>เลือกกิจกรรมการเพาะปลูก</h1>
+    </div> -->
+
+    <ion-list >
+      <ion-grid >
+          <ion-row align-items-start >
+            <ion-col>
+             </ion-col>
+               <input type="radio" name="c1" [(ngModel)] ="c1" value="เตรียมที่ดิน">
+            <ion-col  style="text-align: center">
+                เตรียมที่ดิน
+                  <ion-img style="width: 100px; height: 100px;"src="assets/imgs/เตรียมที่ดิน.jpg" ></ion-img>
+            </ion-col>
+              <ion-col>
+            </ion-col>
+          
+           <ion-col>
+            </ion-col>
+                <input type="radio" name="c1" [(ngModel)] ="c1" value="หว่านเมล็ด">
+             <ion-col  style="text-align: center">
+                หว่านเมล็ด
+                <ion-img style="width: 100px; height: 100px;"src="assets/imgs/หว่านเมล็ด.jpg" ></ion-img>
+             </ion-col>
+           <ion-col>
+            </ion-col>        
+          </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+          <ion-row align-items-start>
+            <ion-col>
+             </ion-col>
+               <input type="radio" name="c1" [(ngModel)]="c1" value=" รดน้ำ">
+            <ion-col  style="text-align: center">
+                รดน้ำ
+                  <ion-img style="width: 100px; height: 100px;"src="assets/imgs/รถน้ำ.jpg" ></ion-img>
+            </ion-col>
+              <ion-col>
+            </ion-col>
+          
+           <ion-col>
+            </ion-col>
+                <input type="radio" name="c1" [(ngModel)] ="c1" value="ใส่ปุ๋ย">
+             <ion-col  style="text-align: center">
+                ใส่ปุ๋ย
+                <ion-img style="width: 100px; height: 100px;"src="assets/imgs/ใส่ปุ๋ย.jpg" ></ion-img>
+             </ion-col>
+           <ion-col>
+            </ion-col>        
+          </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+          <ion-row align-items-start>
+            <ion-col>
+             </ion-col>
+               <input type="radio" name="c1" [(ngModel)] ="c1" value=" ป่นยา">
+            <ion-col  style="text-align: center">
+                พ่นยา
+                  <ion-img style="width: 100px; height: 100px;"src="assets/imgs/ป่นยา.jpg" ></ion-img>
+            </ion-col>
+              <ion-col>
+            </ion-col>
+          
+           <ion-col>
+            </ion-col>
+                <input type="radio" name="c1" [(ngModel)] ="c1" value=" กำจัดวัชพืช">
+             <ion-col  style="text-align: center">
+                กำจัดวัชพืช
+                <ion-img style="width: 100px; height: 100px;"src="assets/imgs/กำจัดวัชพืช.jpg" ></ion-img>
+             </ion-col>
+           <ion-col>
+            </ion-col>        
+          </ion-row>
+      </ion-grid>
+
+      <ion-grid>
+        <ion-row align-items-start>
+          <ion-col>
+           </ion-col>
+             <input type="radio" name="c1"[(ngModel)] ="c1" value="พรวนดิน">
+          <ion-col  style="text-align: center">
+              พรวนดิน
+                <ion-img style="width: 100px; height: 100px;"src="assets/imgs/พรวนดิน.jpg" ></ion-img>
+          </ion-col>
+            <ion-col>
+          </ion-col>
+        
+         <ion-col>
+          </ion-col>
+              <input type="radio" name="c1" [(ngModel)] ="c1" value="เก็บเกี่ยวผลผลิต">
+           <ion-col  style="text-align: center">
+              เก็บเกี่ยวผลผลิต
+              <ion-img style="width: 100px; height: 100px;"src="assets/imgs/เก็บเกี่ยวผลผลิต.jpg" ></ion-img>
+           </ion-col>
+         <ion-col>
+          </ion-col>        
+        </ion-row>
+    </ion-grid>
+  
+      
+      <ion-item>
+          <ion-label floating>กิจกรมอื่นๆ </ion-label>
+          <ion-input type="text"  name="c1"  value="" [(ngModel)]="c1"></ion-input>
+      </ion-item>
+
+      
+
+      
+    </ion-list>
+
+    <ion-item>
+      <ion-label floating>รายจ่าย(บาท)</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="c2" value="0"></ion-input>
+   </ion-item>
+
+   <ion-item>
+    <ion-label floating>จำนวนที่เก็บขาย(กก.)</ion-label>
+    <ion-input type="text" value="" [(ngModel)]="c4" value="0"></ion-input>
+ </ion-item>
+
+ <ion-item>
+  <ion-label floating>ราคาที่ขาย(บาท)</ion-label>
+  <ion-input type="text" value="" [(ngModel)]="c5" value="0"></ion-input>
+</ion-item>
+
+   <ion-item>
+      <ion-label floating>รวมรายได้(บาท)</ion-label>
+      <ion-input type="text" value="" [(ngModel)]="c3" value="0"></ion-input>
+   </ion-item>
+
+
+   <button padding ion-button round (click) ="savedetail(myDate,c1,c2,c3,c4,c5)">บันทึก</button>
+   <button padding ion-button round (click) ="cencel()">ยกเลิก</button>
+
+  </ion-content>
+  
+  <style>
+    ion-list:first-child {
+      margin-top: 32px;
+    }
+    ion-list + ion-list {
+      margin-top: 0;
+    }
+  </style>
